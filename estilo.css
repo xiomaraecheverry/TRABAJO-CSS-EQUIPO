@@ -1,0 +1,108 @@
+
+    body {
+        font-family: Arial, sans-serif;
+        background: #f7f7f7;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        width: 90%;
+        max-width: 1200px;
+        margin: auto;
+        padding: 20px;
+    }
+
+    /* --- CAJAS GENERALES --- */
+    header, main > div, table, .botones-section, .footer-desarrollo, .galeria, .especificaciones {
+        border: 2px solid #000;
+        border-radius: 20px;
+        padding: 20px;
+        margin-bottom: 25px;
+        background: white;
+    }
+
+    header h1 {
+        text-align: center;
+        margin: 0;
+    }
+
+    /* Sección superior: dos columnas */
+    .top-section {
+        display: flex;
+        gap: 20px;
+    }
+
+    .galeria, .especificaciones {
+        width: 50%;
+    }
+
+    .galeria h2, .especificaciones h2 {
+        text-align: center;
+        margin-top: 0;
+    }
+
+    /* Galería estilo wireframe */
+    .galeria-grid {
+        display: flex;
+        justify-content: space-around;
+        padding: 10px 0;
+    }
+
+    .imagen-item {
+        border: 2px solid #000;
+        border-radius: 15px;
+        padding: 10px;
+    }
+
+    .imagen-item img {
+        border-radius: 10px;
+        display: block;
+    }
+
+    /* Tabla estilo wireframe */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    table td {
+        border: 1px solid #000;
+        padding: 10px;
+    }
+
+    /* Descripción */
+    .descripcion h3 {
+        margin-top: 0;
+    }
+
+    /* Botones estilo tarjetas */
+    .botones-section {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .boton-card {
+        width: 48%;
+        padding: 20px;
+        font-size: 18px;
+        background: #fff;
+        border: 2px solid #000;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+    .boton-card:hover {
+        background: #e6e6e6;
+    }
+
+    /* Footer */
+    .footer-desarrollo p {
+        text-align: center;
+        font-style: italic;
+        margin: 0;
+    }
+
