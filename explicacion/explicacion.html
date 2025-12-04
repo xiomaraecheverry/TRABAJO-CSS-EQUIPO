@@ -1,0 +1,108 @@
+<!-- Indicamos que el documento es HTML5 -->
+<!DOCTYPE html>
+
+<!-- La etiqueta html inicia todo el documento y selecciona el idioma -->
+<html lang="es">
+
+<head>
+    <!-- Permite usar tildes, ñ y caracteres especiales -->
+    <meta charset="UTF-8">
+
+    <!-- Hace que la página se adapte a celular y computador (responsive) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título que aparece en la pestaña del navegador -->
+    <title>consecionario</title>
+
+    <!-- Vinculamos el archivo CSS con estilos -->
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+<!-- Contenedor principal que agrupa toda la página -->
+<div class="container">
+
+    <!-- Encabezado de la página -->
+    <header>
+        <h1>consecionario</h1> <!-- Título principal -->
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+
+        <!-- Sección superior: contiene la galería y las especificaciones -->
+        <div class="top-section">
+
+            <!-- Galería de imágenes -->
+            <div class="galeria">
+                <h2>DISEÑOS</h2>
+
+                <!-- Contenedor en forma de cuadricula para las fotos -->
+                <div class="galeria-grid">
+
+                    <!-- Cada imagen es un item -->
+                    <div class="imagen-item">
+                        <img src="img/cochee.jpg" width="150" height="150"> <!-- Imagen 1 -->
+                    </div>
+
+                    <div class="imagen-item">
+                        <img src="img/deportivo.jpg" width="150" height="150"> <!-- Imagen 2 -->
+                    </div>
+
+                    <div class="imagen-item">
+                        <img src="img/carrito.jpg" width="150" height="150"> <!-- Imagen 3 -->
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Tabla de especificaciones -->
+            <div class="especificaciones">
+                <h2>Especificaciones</h2>
+
+                <!-- Tabla con tipos de vehículos y descripción -->
+                <table>
+                    <tr>
+                        <td>CAMIONETA</td>
+                        <td>TIENE ESPACIO MUY AMPLIO</td>
+                    </tr>
+
+                    <tr>
+                        <td>DEPORTIVO</td>
+                        <td>ALTA VELOCIDAD Y DISEÑO AERODINÁMICO</td>
+                    </tr>
+
+                    <tr>
+                        <td>PARTICULAR</td>
+                        <td>CONFORT Y EFICIENCIA PARA USO DIARIO</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- Descripción del concesionario -->
+        <div class="descripcion">
+            <h3>Descripción</h3>
+            <p>
+                EN NUESTRO CONSECIONARIO MANEJAMOS UNA VARIEDAD DE VEHICULOS DE ALTA CALIDAD...
+            </p>
+        </div>
+
+        <!-- Sección de botones -->
+        <div class="botones-section">
+            <button class="boton-card">Garantía de Envíos</button>
+            <button class="boton-card">Enlaces</button>
+        </div>
+
+        <!-- Pie de página con los autores -->
+        <div class="footer-desarrollo">
+            <p><strong>DESARROLLADO</strong> por JUAN ARCILA Y ASHLY ECHEVERRY</p>
+        </div>
+
+    </main>
+
+</div>
+
+</body>
+</html>

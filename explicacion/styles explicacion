@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;  /* Fuente del texto en toda la página */
+    background: #f7f7f7;              /* Color de fondo general */
+    margin: 0;                        /* Quitamos el margen por defecto del navegador */
+    padding: 0;                       /* Quitamos el padding por defecto */
+}
+
+/* Contenedor principal del sitio */
+.container {
+    width: 90%;                       /* Ocupa el 90% del ancho de la pantalla */
+    max-width: 1200px;                /* Máximo ancho permitido */
+    margin: auto;                     /* Centra el contenido horizontalmente */
+    padding: 20px;                    /* Espacio interno */
+}
+
+/* CAJAS GENERALES*/
+/* Aplica bordes y fondo a varios contenedores */
+header, main > div, table, .botones-section, .footer-desarrollo, .galeria, .especificaciones {
+    border: 2px solid #000;           /* Borde negro */
+    border-radius: 20px;              /* Bordes redondeados */
+    padding: 20px;                    /* Espaciado interno */
+    margin-bottom: 25px;              /* Espaciado hacia abajo */
+    background: white;                /* Fondo blanco dentro de cada caja */
+}
+
+/* Título principal centrado */
+header h1 {
+    text-align: center;
+    margin: 0;                        /* Quitamos márgenes para que quede pegado arriba */
+}
+
+.top-section {
+    display: flex;                    /* Organiza elementos en columnas */
+    gap: 20px;                        /* Espacio entre galería y tabla */
+}
+
+/* Galería y especificaciones ocupan cada una la mitad del ancho */
+.galeria, .especificaciones {
+    width: 50%;
+}
+
+/* Centrado de los títulos de cada sección */
+.galeria h2, .especificaciones h2 {
+    text-align: center;
+    margin-top: 0;                    /* Quita margen superior para que no baje el título */
+}
+
+.galeria-grid {
+    display: flex;                    /* Las imágenes se alinean horizontalmente */
+    justify-content: space-around;    /* Espacio uniforme entre imágenes */
+    padding: 10px 0;
+}
+
+/* Cada imagen dentro de un cuadro */
+.imagen-item {
+    border: 2px solid #000;           /* Borde negro estilo wireframe */
+    border-radius: 15px;              /* Bordes redondeados */
+    padding: 10px;                    /* Espacio interno */
+}
+
+/* Imagen ajustada dentro del cuadro */
+.imagen-item img {
+    border-radius: 10px;              /* Bordes suaves */
+    display: block;                   /* Quita el espacio debajo de las imágenes */
+}
+
+/* ----- TABLA DE ESPECIFICACIONES ----- */
+table {
+    width: 100%;                      /* La tabla ocupa todo el ancho */
+    border-collapse: collapse;        /* Une los bordes para que no se dupliquen */
+    text-align: center;               /* Centra todo el texto */
+    font-size: 16px;
+}
+
+/* Bordes internos de cada celda */
+table td {
+    border: 1px solid #000;
+    padding: 10px;
+}
+
+.descripcion h3 {
+    margin-top: 0;                    /* Evita el espacio arriba del título */
+}
+
+.botones-section {
+    display: flex;                    /* Alinea los botones en fila */
+    justify-content: space-between;   /* Se separan uno a cada lado */
+    gap: 20px;
+}
+
+/* Estilo del botón tipo tarjeta */
+.boton-card {
+    width: 48%;                       /* Ocupa casi la mitad del contenedor */
+    padding: 20px;                    /* Espacio interno */
+    font-size: 18px;                  /* Tamaño de letra */
+    background: #fff;                 /* Fondo blanco */
+    border: 2px solid #000;           /* Borde negro */
+    border-radius: 20px;              /* Bordes redondeados */
+    cursor: pointer;                  /* Cambia el cursor a mano */
+}
+
+/* Cambia el color del botón al pasar el mouse */
+.boton-card:hover {
+    background: #e6e6e6;
+}
+
+.footer-desarrollo p {
+    text-align: center;               /* Centra el texto */
+    font-style: italic;               /* Lo pone en cursiva */
+    margin: 0;                        /* Quita el margen */
+}
